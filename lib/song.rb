@@ -31,12 +31,6 @@ class Song
 
   def self.find_by_name(title)
     @@all.select {|song| song.name == title}
-      if song.name == title
-        found = song
-      else
-        false
-      end
-    end
 
   end
 
