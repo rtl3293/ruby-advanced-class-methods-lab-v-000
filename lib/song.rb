@@ -32,7 +32,7 @@ class Song
   def self.find_by_name(title)
     @@all.each do |song|
       if song.name == title
-        return song
+        song
       end
     end
   end
@@ -50,5 +50,3 @@ end
 
 Song.create_by_name("Dog")
 Song.create_by_name("Cat")
-puts Song.find_by_name("Dog")
-puts Song.find_by_name("Cat")
