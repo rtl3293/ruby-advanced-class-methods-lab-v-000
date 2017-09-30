@@ -59,6 +59,17 @@ class Song
     new_song.artist_name = formatted_file[0]
     new_song
   end
+
+  def self.create_from_filename(file_name)
+    split_file = file_name.split("-")
+    formatted_file = split_file.collect do |words|
+      words.strip!
+    end
+    formatted_file[1].chomp!(".mp3")
+    new_song = self.create_by_name(formatted_file[1])
+    new_song.artist_name = formatted_file[0]
+    new_song
+  end
 end
 
 
