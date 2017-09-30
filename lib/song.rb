@@ -49,3 +49,6 @@ end
 
 
 Song.create_by_name("Dog")
+Song.create_by_name("Cat")
+Song.find_by_name("Dog")
+SOng.find_by_name("Cat")
