@@ -48,6 +48,10 @@ class Song
       a.name <=> b.name
     end
   end
+
+  def new_from_filename
+
+  end
 end
 
 
