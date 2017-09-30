@@ -46,7 +46,3 @@ class Song
     end
   end
 end
-
-
-Song.create_by_name("Dog")
-Song.create_by_name("Cat")
