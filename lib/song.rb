@@ -56,7 +56,7 @@ class Song
     end
     new_song = self.new_by_name(formatted_file[0])
     new_song.artist_name = formatted_file[1]
-    
+    new_song
   end
 end
 
