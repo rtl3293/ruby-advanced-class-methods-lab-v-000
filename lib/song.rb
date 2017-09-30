@@ -30,9 +30,9 @@ class Song
   end
 
   def self.find_by_name(title)
-    @@all.each do |song|
+    @@all.select {|song| song.name == title}
       if song.name == title
-        return song
+        found = song
       else
         false
       end
