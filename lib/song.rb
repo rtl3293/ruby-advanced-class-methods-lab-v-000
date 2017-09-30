@@ -31,7 +31,7 @@ class Song
 
   def self.find_by_name(title)
     found = @@all.select {|song| song.name == title}
-    found.to_s
+    found[0]
   end
 
   def self.find_or_create_by_name(title)
