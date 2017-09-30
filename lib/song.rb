@@ -50,3 +50,4 @@ end
 
 Song.create_by_name("Dog")
 puts Song.find_by_name("CAT")
+Song.find_by_name("Dog")
