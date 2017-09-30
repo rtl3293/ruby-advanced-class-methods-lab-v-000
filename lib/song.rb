@@ -47,6 +47,6 @@ end
 
 # Song.create_by_name("Dog")
 # Song.create_by_name("Cat")
-# # puts Song.find_by_name("Dog")
-# # puts Song.find_by_name("Cat")
+# puts Song.find_by_name("Dog")
+# puts Song.find_by_name("Cat")
 # puts Song.find_by_name("Bird")
