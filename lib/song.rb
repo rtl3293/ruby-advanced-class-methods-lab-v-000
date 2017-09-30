@@ -70,6 +70,9 @@ class Song
     new_song.artist_name = formatted_file[0]
     new_song
   end
+
+  def self.destroy_all
+    @@all.clear
 end
 
 
