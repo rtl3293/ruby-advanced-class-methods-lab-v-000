@@ -35,6 +35,7 @@ class Song
         return song
       end
     end
+
   end
 
   def self.find_or_create_by_name(title)
@@ -49,6 +50,7 @@ end
 
 
 Song.create_by_name("Dog")
-#Song.create_by_name("Cat")
+Song.create_by_name("Cat")
 puts Song.find_by_name("Dog")
 puts Song.find_by_name("Cat")
+puts Song.find_by_name("Bird")
